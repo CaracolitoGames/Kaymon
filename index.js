@@ -1,3 +1,5 @@
+// REPOSITORIO DE GIT https://github.com/KikGame/Kaymon.git
+
 // LIBRERIAS
 const { Client, MessageEmbed, Collection, MessageAttachment } = require("discord.js");
 const client = new Client();
