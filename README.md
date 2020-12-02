@@ -1,1 +1,1 @@
-"Kaymon es un bot de discord creado"
+Kaymon es un bot de discord creado
