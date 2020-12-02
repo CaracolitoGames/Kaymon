@@ -193,4 +193,20 @@ module.exports = (message) => {
       message.channel.send(`<@${message.author.id}> dijo una groseria`);
       message.author.send(embed);
    }
+
+   ///// PORNO /////
+   if(message.content.includes("Porno") || message.content.includes("porno")){
+
+      message.delete();
+
+      const embed = new MessageEmbed() 
+         .setTitle(mensaje_embed_titulo)
+         .setAuthor("Kaymon")
+         .setColor("RANDOM")
+         .setDescription(mensaje_embed_description)
+         .setFooter("MALO!!");
+
+      message.channel.send(`<@${message.author.id}> dijo una groseria`);
+      message.author.send(embed);
+   }
 }
