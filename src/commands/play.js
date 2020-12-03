@@ -7,19 +7,18 @@ module.exports = {
     Nombre: "play",
     Alias: [],
     run: async (client, message, args) => {
-		
-    	const ytdl = require('ytdl-core');
 
-	    let voiceChannel = message.member.voiceChannel;
-	    if(!voiceChannel) return message.channel.send('¡Necesitas unirte a un canal de voz primero!.');
-	    if(!args) return message.channel.send('Ingrese un enlace de youtube para poder reproducirlo.');
-
-	    voiceChannel.join()
-	      	.then(connection => {
-	        	const url = ytdl(args, { filter : 'audioonly' });
-	        	const dispatcher = connection.playStream(url);
-	        	message.channel.send('Reproduciendo ahora: '+ args);
-	        	message.delete();
-	    	}).catch(console.error);
-    }
+    	let Canalvoz = message.member.voiceChannel;
+	    if (!Canalvoz || Canalvoz.type !== 'voice') {
+	    	message.channel.send('¡Necesitas unirte a un canal de voz primero!.').catch(error => message.channel.send(error));
+	    } else if (message.guild.voiceConnection) {
+	    	message.channel.send('Ya estoy conectado en un canal de voz.');
+	    } else {
+	     	message.channel.send('Conectando...').then(m => {
+	          	Canalvoz.join().then(() => {
+	            	m.edit(':white_check_mark: | Conectado exitosamente.').catch(error => message.channel.send(error));
+	        	}).catch(error => message.channel.send(error));
+	    	 }).catch(error => message.channel.send(error));
+	    }
+	}
 }

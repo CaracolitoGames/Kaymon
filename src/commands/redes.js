@@ -4,7 +4,7 @@ const version = require("../config.json");
 client.comandos = new Collection();
 
 module.exports = {
-    Nombre: "redes_sociales",
+    Nombre: "redes",
     Alias: [],
     run: async (client, message, args) => {
         const embed = new MessageEmbed() 

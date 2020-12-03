@@ -4,7 +4,7 @@ const version = require("../config.json");
 client.comandos = new Collection();
 
 module.exports = {
-    Nombre: "invitar_bot",
+    Nombre: "invitar",
     Alias: [],
     run: async (client, message, args) => {
         const embed = new MessageEmbed() 

@@ -195,7 +195,7 @@ module.exports = (message) => {
    }
 
    ///// PORNO /////
-   if(message.content.includes("Porno") || message.content.includes("porno")){
+   if(message.content.includes("Porno") || message.content.includes("porno") || message.content.includes("porno")){
 
       message.delete();
 

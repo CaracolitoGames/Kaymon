@@ -73,3 +73,29 @@ client.on('message', (message) => {
         }
     }
 });
+
+// CUANDO SE INVITA EL BOT A UN SERVIDOR
+client.on('guildCreate', async (guild) => {
+	try {
+		const canal = client.channels.cache.find(channel => channel.id == 778291718692274206);
+		const embed = new MessageEmbed()
+			.setThumbnail(guild.iconURL)
+			.setTitle('Me añadieron en un nuevo servidor ❤')
+			.addField('Servidor', guild.name, true)
+			.addField('Region', guild.region, true)
+			.addField('Roles', guild.roles.size, true)
+			.addField('Miembros', guild.memberCount, true)
+			.setTimestamp()
+			.setColor('RANDOM')
+			.setImage(guild.iconURL.toString);
+		console.log(guild.iconURL.toString);
+
+		canal.send(embed);
+	}
+	catch (error) {
+		const Canal = client.channels.cache.find(channel => channel.id == 778291718692274206);
+		Canal.send('Error en **"guildCreate"** <@&738513252673388655>');
+		Canal.send(error.toString());
+		console.log(error);
+	}
+});
