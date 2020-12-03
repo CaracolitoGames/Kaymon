@@ -13,7 +13,7 @@ module.exports = {
 		    .setColor("RANDOM")
 		    .setFooter("\nVersion del bot " + version.VERSION)
 		    .addField("`Redes Sociales:`",
-		    	`[-Instagram](https://www.instagram.com/elkikgame/)\n[-Facebook](https://www.facebook.com/kikgame.kikgame.5/)\n[-Twitter](https://twitter.com/KikGame3)\n[-Youtube](https://www.youtube.com/channel/UCjdQcJFdDFjWWbQaNckWhjA)`);
+		    	`[-Instagram](https://www.instagram.com/elkikgame/)\n[-Facebook](https://www.facebook.com/kikgame.kikgame.5/)\n[-Twitter](https://twitter.com/KikGame3)\n[-Youtube](https://www.youtube.com/channel/UCjdQcJFdDFjWWbQaNckWhjA)\n[-Itch](https://kikgame.itch.io/)`);
 
     
     	message.channel.send(embed);

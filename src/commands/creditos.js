@@ -13,8 +13,8 @@ module.exports = {
             .setColor("RANDOM")
             .setFooter("Version del bot " + version.VERSION)
             .setDescription("Estos son los creadores y los que estan ayudando con el bot")
-            .addField("AYUDANTES", "-Caracolito Games")
-            .addField("CREADOR", "-KikGame");
+            .addField("AYUDANTES", "-Caracolito Games", true)
+            .addField("CREADOR", "-KikGame", true);
 
     
         message.channel.send(embed);

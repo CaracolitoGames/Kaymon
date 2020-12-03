@@ -37,6 +37,7 @@ function status () {
 	});
 }
 
+
 // INICIO
 client.on('ready', () => {
 	console.log('\x1b[31m%s\x1b[0m', `${client.user.username} ${client.options._tokenType} ${config.VERSION} Listo y Atento!!!`);
