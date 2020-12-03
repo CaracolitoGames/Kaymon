@@ -8,7 +8,7 @@ module.exports = {
     Alias: [],
     run: async (client, message, args) => {
         const embed = new MessageEmbed() 
-		    .setTitle("REDES SOCIALES")
+		    .setTitle("REDES SOCIALES Y CODIGO")
 		    .setAuthor("Kaymon")
 		    .setColor("RANDOM")
 		    .setFooter("\nVersion del bot " + version.VERSION)

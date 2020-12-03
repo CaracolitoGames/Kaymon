@@ -96,8 +96,8 @@ module.exports = (message) => {
 
    ///// TETAS /////
    if(message.content.includes("tetas") || message.content.includes("Tetas") || message.content.includes("Tetones")
-       || message.content.includes("Tetudos") || message.content.includes("tetones") || message.content.includes("tetudos")
-       || message.content.includes("Tetasalaire") || message.content.includes("tetasalaire")){
+      || message.content.includes("Tetudos") || message.content.includes("tetones") || message.content.includes("tetudos")
+      || message.content.includes("Tetasalaire") || message.content.includes("tetasalaire")){
 
       message.delete();
 
@@ -129,7 +129,7 @@ module.exports = (message) => {
    }
 
    ///// CULO /////
-   if(message.content.includes("culo") || message.content.includes("Culo")  || message.content.includes("Nalgas")
+   if(message.content.startsWith("culo") || message.content.startsWith("Culo")  || message.content.startsWith("Nalgas")
       || message.content.includes("nalgas")){
 
       message.delete();

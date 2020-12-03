@@ -3,6 +3,12 @@ const client = new Discord.Client();
 
 module.exports = (message) => {
 	var mensajes = [":)", ":+1:", ":V", ":-)", ":sunglasses:", "🍎", "✅"];
+   var menciones = [
+      "Quien me llamo?", 
+      "Me llamaron?", 
+      "No me hablen que estoy jugando Fortnite en scratch", 
+      "Hola, soy kaymon"
+   ];
 
 
    	var aleatorio = Math.floor(Math.random()*(mensajes.length));
@@ -33,4 +39,11 @@ module.exports = (message) => {
    		|| message.content.startsWith("pepino") || message.content.startsWith("Pepino") || message.content.startsWith("PEPINO")) {
    		message.channel.send(":cucumber:");
    	}
+
+      // LLAMANDO A KAYMON 2.0
+      if (message.content.includes("<@!771813067146788884>")) {
+         var aleatorio = Math.floor(Math.random()*(menciones.length));
+         message.channel.send(menciones[aleatorio]);
+      }
+
 }

@@ -2,7 +2,7 @@
 
 // LIBRERIAS
 const { Client, MessageEmbed, Collection, MessageAttachment } = require("discord.js");
-const client = new Client();
+const client = new Client({ ws: { intents: 32767 } });
 client.comandos = new Collection();
 const fs = require("fs");
 let comandos = fs.readdirSync("./src/commands/").filter((f) => f.endsWith(".js"));
@@ -25,6 +25,25 @@ for (var archi of comandos) {
     client.comandos.set(comando.Nombre, comando);
     console.log('\x1b[32m%s\x1b[0m', archi + " fue cargado correctamente :V");
 }
+
+// BIENVENIDO
+// client.on("guildMemberAdd", (miembro) => {
+
+// 	if (server.id == 773739628682674256) {
+// 		// MENSAJE EN CANAL DE BIENVENIDA
+// 	    const Canal = miembro.guild.channels.cache.get('773741753421398037');
+		
+// 		const mensaje_publico = new MessageEmbed()
+// 			.setColor('RANDOM')
+// 			.setAuthor("Kaymon")
+// 			.setTitle(`BIENVENIDO`)
+// 			.addField("GRACIAS POR PASARTE POR AQUI", `Gracias por entrar <@${miembro.id}> a este servidor, espero te diviertas :+1:`)
+// 			.addField("Para que es este servidor?", "Este servidor es para todo!!!, quieres jugar videojuegos con amigos?, aqui jugaras videojuegos. Quieres aprender a programar?, aqui te ayudamos :raised_hands:");
+
+// 		Canal.send(mensaje_publico);
+// 	}
+
+// });
 
 // STATUS
 function status () {
@@ -53,7 +72,6 @@ client.on('message', (message) => {
 
 	
 	//ARCHIVOS JS
-	require('./src/conversaciones/saludos.js')(message);
 	require('./src/conversaciones/platicar.js')(message);
 	require('./src/consola_bot/espiar.js')(message, lista);
 	require('./src/seguridad/groserias.js')(message);
