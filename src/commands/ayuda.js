@@ -30,7 +30,9 @@ module.exports = {
 				    .addField("----`>-creditos`----", `***Quieres saber quienes son los ayudantes o el credor del bot?***`, true)
 				    .addField("----`>-redes`----", `***Quieres ver las redes sociales de mi creador?***`, true)
 				    .addField("----`>-limpiar`----", `***Elimina una cantidad de mensajes***`, true)
-				    .addField("----`>-sugerencia`----", `***Has una sugerencia para mejorar este servidor***`, true);
+				    .addField("----`>-sugerencia`----", `***Has una sugerencia para mejorar este servidor***`, true)
+				    .addField("----`>-buscaminas`----", `***Juega al buscaminas***`, true)
+				    .addField("----`>-di`----", `***Que quieres que diga por ti?***`, true);
 
 		    
 		    	message.channel.send(embed);    			
@@ -50,7 +52,9 @@ module.exports = {
 				    .addField("----`>-invitar`----", "***Si quieres,invitame a tu server***", true)
 				    .addField("----`>-creditos`----", `***Quieres saber quienes son los ayudantes o el credor del bot?***`, true)
 				    .addField("----`>-redes`----", `***Quieres ver las redes sociales de mi creador?***`, true)
-				    .addField("----`>-limpiar`----", `***Elimina una cantidad de mensajes***`, true);
+				    .addField("----`>-limpiar`----", `***Elimina una cantidad de mensajes***`, true)
+				    .addField("----`>-buscaminas`----", `***Juega al buscaminas***`, true)
+				    .addField("----`>-di`----", `***Que quieres que diga por ti?***`, true);
 
 				message.channel.send(embed);
     		}

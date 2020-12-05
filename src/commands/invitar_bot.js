@@ -13,7 +13,7 @@ module.exports = {
 		    .setColor("RANDOM")
 		    .setFooter("\nVersion del bot " + version.VERSION)
 		    .addField("`Invitacion:`",
-		    	`Quieres invitarme a tu server?, [da click aqui!!](https://discord.com/oauth2/authorize?client_id=771813067146788884&scope=bot&permissions=8)`, true)
+		    	`Quieres invitarme a tu server?, esta es mi pagina donde encontraras el link, [da click aqui!!](https://kaymon.herokuapp.com/)`, true)
 		    .addField("`CODIGO::`",
 		    	`Este es mi repositorio de github, [da click aqui!!](https://github.com/KikGame/Kaymon)`, true);
 
