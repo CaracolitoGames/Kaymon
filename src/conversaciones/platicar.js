@@ -7,7 +7,8 @@ module.exports = (message) => {
       "Quien me llamo?", 
       "Me llamaron?", 
       "No me hablen que estoy jugando Fortnite en scratch", 
-      "Hola, soy kaymon"
+      "Hola, soy kaymon",
+      "Hola :wave:"
    ];
 
 
@@ -29,12 +30,6 @@ module.exports = (message) => {
    	}
 
    	//PEPINOS
-   	if(message.content.startsWith("PEPINOS") || message.content.startsWith("Pepinos") || message.content.startsWith("pepinos")
-   		|| message.content.startsWith("pepino") || message.content.startsWith("Pepino") || message.content.startsWith("PEPINO")) {
-   		message.channel.send(":cucumber:");
-   	}
-
-   	//LLAMADAS A KAYMON
    	if(message.content.startsWith("PEPINOS") || message.content.startsWith("Pepinos") || message.content.startsWith("pepinos")
    		|| message.content.startsWith("pepino") || message.content.startsWith("Pepino") || message.content.startsWith("PEPINO")) {
    		message.channel.send(":cucumber:");

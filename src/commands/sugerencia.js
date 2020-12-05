@@ -35,7 +35,7 @@ module.exports = {
 	    			message.channel.send("Debes escribir algo");
 	    		}
 
-	    		message.delete({ timeout: 2 });
+	    		message.delete({ timeout: 0 });
 	    	}
 
 
