@@ -1,5 +1,5 @@
 {
-	"BOT_TOKEN": "process.env.TOKEN",
+	"BOT_TOKEN": "",
 	"PERFIX": ">-",
 	"VERSION": "1.0.0"
 }

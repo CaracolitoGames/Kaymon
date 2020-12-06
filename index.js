@@ -9,7 +9,7 @@ const colors = require('colors');
 const config = require('./src/config.json');
 
 // LOGIN
-client.login(config.BOT_TOKEN);
+client.login(process.env.TOKEN);
 
 
 // VARIABLES
