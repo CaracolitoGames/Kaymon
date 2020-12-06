@@ -10,6 +10,7 @@ module.exports = {
     run: async (client, message, args) => {
 
     	var server = message.guild;
+    	var bot_icono = "https://cdn.discordapp.com/avatars/771813067146788884/bb887a8d3a094265a049c70037740ba6.webp"
 
     	if (server) {
 
@@ -17,7 +18,7 @@ module.exports = {
     		if (server.id == "781694613852782612" || server.id == "773739628682674256") {
 				const embed = new MessageEmbed() 
 				    .setTitle("AYUDA")
-				    .setAuthor("Kaymon")
+				    .setAuthor("Kaymon", bot_icono, '')
 				    .setColor("RANDOM")
 				    .setDescription("Puedes ocupar el comando __>-ayuda__ para ver mis comandos, entra al server de mi creador dando click [aqui](https://discord.gg/M7fBpQgy6V)!! ✅")
 				    .setFooter("\n\nVersion del bot: " + version.VERSION)

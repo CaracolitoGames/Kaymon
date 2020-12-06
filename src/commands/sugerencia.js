@@ -18,10 +18,10 @@ module.exports = {
 	    		if (mensaje) {
 		    		const embed = new MessageEmbed() 
 					    .setTitle("SUGERENCIA")
-					    .setAuthor("Kaymon")
+					    .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true, format: 'png', size: 1024 }), '')
 					    .setColor("RANDOM")
 					    .setFooter("\nVersion del bot " + version.VERSION)
-					    .addField(`Sugerencia de ${message.author.username} para el servidor ${message.guild.name}`, `${mensaje}`);
+					    .setDescription(`${mensaje}`);
 
 		    		
 		    		Canal.send(embed).then(msg => {
@@ -62,10 +62,10 @@ module.exports = {
 	    		if (mensaje) {
 		    		const embed = new MessageEmbed() 
 					    .setTitle("SUGERENCIA")
-					    .setAuthor("Kaymon")
-					    .setColor("RANDOM")
+					    .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true, format: 'png', size: 1024 }), '')
+					    .setColor("#5f73ff")
 					    .setFooter("\nVersion del bot " + version.VERSION)
-					    .addField(`Sugerencia de ${message.author.username} para el servidor ${message.guild.name}`, `${mensaje}`);
+					    .setDescription(`${mensaje}`);
 
 		    		
 		    		Canal.send(embed).then(msg => {

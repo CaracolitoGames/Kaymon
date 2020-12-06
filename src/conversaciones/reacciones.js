@@ -25,12 +25,6 @@ module.exports = (message) => {
       if (message.content.includes("/love") || message.content.includes("love")) {
          message.react("❤");
       }
-
-      // HOLA
-      if (message.content.includes("hola") || message.content.includes("Hola") || message.content.includes("holi")
-         || message.content.includes("wenas") || message.content.includes("Wenas")) {
-         message.react("👋");
-      }
       
    }
 }

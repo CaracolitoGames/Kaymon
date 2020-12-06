@@ -15,7 +15,18 @@ module.exports = (message) => {
       "pendejo",
       "PENDEJO",
 
-      ""
+      "Porno",
+      "porno",
+      "PORNO",
+
+      "PITO",
+      "pito",
+      "Pito",
+
+      "Vagina",
+      "vagina",
+      "VAGINA"
+
    ];
 
    groserias.forEach((element) => {

@@ -46,7 +46,7 @@ for (var archi of comandos) {
 // STATUS
 function status () {
 	client.user.setPresence({
-		status: 'online',
+		status: 'idle',
 		activity: {
 			name: 'Fortnite en scratch | >-ayuda',
 			type: 'PLAYING'
